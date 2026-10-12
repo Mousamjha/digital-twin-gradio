@@ -1,0 +1,23 @@
+[project]
+name = "digital-assistant-agentic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mousam Jha", email = "mousamjha8@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=6.30.0",
+    "openai>=3.29.0",
+    "pypdf>=6.20.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+digital-assistant-agentic = "digital_assistant_agentic:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
